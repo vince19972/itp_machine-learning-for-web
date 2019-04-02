@@ -7,7 +7,9 @@
 
 ## Description
 
-The idea of this use the toxicity classifier model trained by Tensorflow to build a instant detector for the inputs. This app is only listening to dynamic user input at the moment, but it could possibly be combined with web crawler to process target content for future application.
+The idea of this use the toxicity classifier model trained by Tensorflow to build a instant detector for the inputs. If toxic content is detected, the textarea would transition to black canvas to cover it. Only removing the toxic content would reveal the text again.
+
+This app is only listening to dynamic user input at the moment, but it could possibly be combined with web crawler to process target content for future application.
 
 ### Run the program
 
