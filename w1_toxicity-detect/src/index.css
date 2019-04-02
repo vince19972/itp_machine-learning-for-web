@@ -7,16 +7,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #f1f8e9;
 }
 
 
 #root,
 .main-textarea {
-  transition: all .3s ease-in-out;
+  transition: all .3s ease-in;
 }
+
 #root.-is-loading,
-#root.-is-loading .main-textarea{
-  background-color: black;
-  transition: all .3s ease-in-out;
+#root.-is-loading .main-textarea {
+  background-color: #9b0000 !important;
+  transition: all .3s ease-in;
 }
 

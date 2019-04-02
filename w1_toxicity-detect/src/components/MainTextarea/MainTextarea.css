@@ -1,8 +1,8 @@
 .main-textarea {
-	width: 90%;
+	width: 100%;
 		max-width: 100vw;
-		min-height: 100%;
-	/* padding: 2vh 4vw; */
+		min-height: 90%;
+	padding: 2vh 2vw;
 	font-size: 16vw;
 		font-weight: bold;
 		line-height: 14vw;
@@ -10,6 +10,8 @@
 		resize: none;
 		border: none;
 		overflow: auto;
+
+	transition: all .1s ease-in-out;
 }
 
 .main-textarea::-webkit-scrollbar {

@@ -11,14 +11,16 @@ class MainTextarea extends Component {
 		super(props)
 
 		this.state = {
-			input: ''
+			input: '',
+			mainColor: 'rgba(180, 0, 0, 0)'
 		}
 
 		this.handleChange = this.handleChange.bind(this)
 		this.loadTf = this.loadTf.bind(this)
+		this.handlePredictResult = this.handlePredictResult.bind(this)
 
 		// debounce
-		this.loadTf = _.debounce(this.loadTf, 500)
+		this.loadTf = _.debounce(this.loadTf, 1000)
 	}
 
 	handleChange(event) {
@@ -26,17 +28,27 @@ class MainTextarea extends Component {
 		this.loadTf()
 	}
 
-	loadTf () {
+	loadTf() {
 		loader.on()
 		toxicDetect.loadModel()
 			.then(model => {
 				toxicDetect
 					.classify(this.state.input)(model)
 						.then(predictions => {
-							toxicDetect.predict(predictions)
+							this.handlePredictResult(toxicDetect.predict(predictions))
 							loader.off()
 						})
 			})
+	}
+
+	handlePredictResult(predictions) {
+		// get toxicity result
+		const result = predictions[6].results[0]
+		const [falseProbability, trueProbability] = result.probabilities
+
+		this.setState({
+			mainColor: `rgba(0, 0, 0, ${trueProbability + 0.05})`,
+		})
 	}
 
 	render () {
@@ -45,6 +57,7 @@ class MainTextarea extends Component {
 				className="main-textarea"
 				value={this.state.input}
 				onChange={this.handleChange}
+				style={{ backgroundColor: this.state.mainColor }}
 			/>
 		)
 	}
