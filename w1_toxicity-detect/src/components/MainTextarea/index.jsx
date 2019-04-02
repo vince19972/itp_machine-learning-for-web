@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import './MainTextarea.css'
 
-import toxicDetect from './ToxicDetect'
+import toxicDetect from '../../helpers/ToxicDetect'
+import loader from '../../helpers/Loader'
+
+const _  = require('underscore')
 
 class MainTextarea extends Component {
 	constructor(props) {
@@ -12,18 +15,28 @@ class MainTextarea extends Component {
 		}
 
 		this.handleChange = this.handleChange.bind(this)
+		this.loadTf = this.loadTf.bind(this)
+
+		// debounce
+		this.loadTf = _.debounce(this.loadTf, 500)
 	}
 
 	handleChange(event) {
 		this.setState({ input: event.target.value })
+		this.loadTf()
+	}
 
+	loadTf () {
+		loader.on()
 		toxicDetect.loadModel()
-			.then(model => toxicDetect
-				.classify(console.log('hehehehe'))(this.state.input)(model)
-					.then(predictions => toxicDetect
-						.predict(predictions)
-					)
-			)
+			.then(model => {
+				toxicDetect
+					.classify(this.state.input)(model)
+						.then(predictions => {
+							toxicDetect.predict(predictions)
+							loader.off()
+						})
+			})
 	}
 
 	render () {

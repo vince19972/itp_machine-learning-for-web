@@ -9,7 +9,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+#root,
+.main-textarea {
+  transition: all .3s ease-in-out;
 }
+#root.-is-loading,
+#root.-is-loading .main-textarea{
+  background-color: black;
+  transition: all .3s ease-in-out;
+}
+
