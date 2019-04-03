@@ -2,6 +2,7 @@
 
 ![demo gif](https://raw.githubusercontent.com/vince19972/itp_machine-learning-for-web/master/_documents/toxicity-detect.gif)
 
+- 🕹 [Play with it here](https://vince19972.github.io/itp_machine-learning-for-web/w1_toxicity-detect/build/index.html)
 - Documentation blog post [is here](https://www.vinceshao.com/blog/m-l4-w-toxicity-detector-by-tensorflow)
 - This project is based on [Toxicity classifier model](https://github.com/tensorflow/tfjs-models/tree/master/toxicity) by [Tensorflow.js](https://github.com/tensorflow)
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
