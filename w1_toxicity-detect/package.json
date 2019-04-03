@@ -25,5 +25,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "https://vince19972.github.io/itp_machine-learning-for-web/w1_toxicity-detect/build"
+  "homepage": "."
 }

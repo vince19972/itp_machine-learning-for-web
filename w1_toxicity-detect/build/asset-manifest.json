@@ -1,13 +1,13 @@
 {
-  "main.css": "/itp_machine-learning-for-web/w1_toxicity-detect/build/static/css/main.80ebc60d.chunk.css",
-  "main.js": "/itp_machine-learning-for-web/w1_toxicity-detect/build/static/js/main.92f9b693.chunk.js",
-  "main.js.map": "/itp_machine-learning-for-web/w1_toxicity-detect/build/static/js/main.92f9b693.chunk.js.map",
-  "runtime~main.js": "/itp_machine-learning-for-web/w1_toxicity-detect/build/static/js/runtime~main.1788d27c.js",
-  "runtime~main.js.map": "/itp_machine-learning-for-web/w1_toxicity-detect/build/static/js/runtime~main.1788d27c.js.map",
-  "static/js/2.f9e7bdad.chunk.js": "/itp_machine-learning-for-web/w1_toxicity-detect/build/static/js/2.f9e7bdad.chunk.js",
-  "static/js/2.f9e7bdad.chunk.js.map": "/itp_machine-learning-for-web/w1_toxicity-detect/build/static/js/2.f9e7bdad.chunk.js.map",
-  "index.html": "/itp_machine-learning-for-web/w1_toxicity-detect/build/index.html",
-  "precache-manifest.cd85cd6a833158dd2c7ab823054a48bb.js": "/itp_machine-learning-for-web/w1_toxicity-detect/build/precache-manifest.cd85cd6a833158dd2c7ab823054a48bb.js",
-  "service-worker.js": "/itp_machine-learning-for-web/w1_toxicity-detect/build/service-worker.js",
-  "static/css/main.80ebc60d.chunk.css.map": "/itp_machine-learning-for-web/w1_toxicity-detect/build/static/css/main.80ebc60d.chunk.css.map"
+  "main.css": "./static/css/main.80ebc60d.chunk.css",
+  "main.js": "./static/js/main.00df34b2.chunk.js",
+  "main.js.map": "./static/js/main.00df34b2.chunk.js.map",
+  "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+  "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+  "static/js/2.27cd87df.chunk.js": "./static/js/2.27cd87df.chunk.js",
+  "static/js/2.27cd87df.chunk.js.map": "./static/js/2.27cd87df.chunk.js.map",
+  "index.html": "./index.html",
+  "precache-manifest.28b0deb42dd1aac0162d640a9b60f956.js": "./precache-manifest.28b0deb42dd1aac0162d640a9b60f956.js",
+  "service-worker.js": "./service-worker.js",
+  "static/css/main.80ebc60d.chunk.css.map": "./static/css/main.80ebc60d.chunk.css.map"
 }
