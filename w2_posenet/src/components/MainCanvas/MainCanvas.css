@@ -1,0 +1,15 @@
+#main {
+	display: flex;
+		align-items: center;
+		justify-content: center;
+	width: 100vw;
+		height: 100vh;
+}
+
+#video {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	display: none;
+}
