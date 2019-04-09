@@ -1,5 +1,3 @@
-const canvasWidth = window.innerWidth / 2.5
-const canvasHeight = window.innerHeight / 2
 const minPoseConfidence = 0.1
 const minPartConfidence = 0.5
 
@@ -28,13 +26,8 @@ export function drawKeypoints(keypoints, minConfidence, ctx, scale = 1) {
   }
 }
 
-export function repaint(video, pose) {
-  const canvas = document.getElementById('output')
-  const ctx = canvas.getContext('2d')
-
-  canvas.width = canvasWidth
-	canvas.height = canvasHeight
-
+export function repaint(video, pose, ctxObj) {
+  const { ctx, canvasWidth, canvasHeight } = ctxObj
 	ctx.clearRect(0, 0, canvasWidth, canvasHeight)
 	ctx.save()
 	ctx.scale(-1, 1)
