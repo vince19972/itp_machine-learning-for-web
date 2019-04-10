@@ -6,6 +6,12 @@ This is class assignment repo for class [Machine Learngin for the Web](https://g
 
 ### 1. [Toxicity Detector](https://github.com/vince19972/itp_machine-learning-for-web/tree/master/w1_toxicity-detect)
 
-A project is based on [Toxicity classifier model](https://github.com/tensorflow/tfjs-models/tree/master/toxicity) by [Tensorflow.js](https://github.com/tensorflow) and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Based on [Toxicity classifier model](https://github.com/tensorflow/tfjs-models/tree/master/toxicity) created by [Tensorflow.js](https://github.com/tensorflow) and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![demo gif](https://raw.githubusercontent.com/vince19972/itp_machine-learning-for-web/master/_documents/toxicity-detect.gif)
+![toxicity detector demo gif](https://raw.githubusercontent.com/vince19972/itp_machine-learning-for-web/master/_documents/toxicity-detect.gif)
+
+### 2. [Posenet](https://github.com/vince19972/itp_machine-learning-for-web/tree/master/w2_posenet)
+
+Based on [Posenet model](https://github.com/tensorflow/tfjs-models/tree/master/posenet) created by [Tensorflow.js](https://github.com/tensorflow) and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+![posenet demo gif](https://raw.githubusercontent.com/vince19972/itp_machine-learning-for-web/master/_documents/posenet.gif)
